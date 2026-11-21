@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
     return {
-    publicDir: 'src', 
+    publicDir: 'src/assets', 
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

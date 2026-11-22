@@ -147,11 +147,11 @@ export const ComparisonDecisionSection: React.FC<ComparisonDecisionSectionProps>
                 rel="noopener noreferrer"
                 className="w-full py-4 px-4 text-xs sm:text-sm md:text-base font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl transition-all shadow-xl shadow-[#00E676]/40 ring-2 ring-[#00E676]/60 hover:scale-[1.02] active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2 text-center leading-snug"
               >
-                <span>CLIQUE E RESOLVA SEU SONO · VIP (R$ 47)</span>
+                <span>QUERO DORMIR MELHOR · VIP (R$ 47)</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
               </a>
               <p className="text-[11px] sm:text-xs font-bold text-amber-300 text-center leading-snug">
-                ★ Aqui mora um tesouro para sua vida: tudo para resolver seu sono hoje.
+                ★ Aqui mora um tesouro para sua vida: tudo para ajudar no seu sono hoje.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export const ComparisonDecisionSection: React.FC<ComparisonDecisionSectionProps>
             A diferença é de apenas R$ 20 — mas o ganho para sua vida no VIP é imenso.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Enquanto o Essencial te ajuda a iniciar o controle, o VIP entrega o acervo completo com imersão, desenvolvimento profissional e práticas corporais para resolver seu sono pela raiz.
+            Enquanto o Essencial te ajuda a iniciar o controle, o VIP entrega o acervo completo com imersão, desenvolvimento profissional e práticas corporais para apoiar o seu sono pela raiz.
           </p>
         </div>
       </div>

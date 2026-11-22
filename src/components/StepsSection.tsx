@@ -12,7 +12,7 @@ const steps = [
   },
   {
     step: 'PASSO 02',
-    action: 'APLIQUE A SOLUÇÃO',
+    action: 'APLIQUE A PRÁTICA',
     description:
       'Use o botão SOS nas noites difíceis e mergulhe nos conteúdos do VIP (Imersão Código do Sono Perfeito, palestras, Mini Curso 5 Pilares do Atendimento e Qi Gong) para desligar a mente e evoluir.',
     icon: <Eye className="w-6 h-6 text-purple-400" />,
@@ -20,7 +20,7 @@ const steps = [
   },
   {
     step: 'PASSO 03',
-    action: 'RESOLVA SEU SONO',
+    action: 'RECUPERE SUAS NOITES',
     description:
       'Veja suas noites ficarem contínuas, profundas e restauradoras. Pare de sobreviver ao cansaço e volte a acordar com clareza e disposição.',
     icon: <Sparkles className="w-6 h-6 text-emerald-400" />,
@@ -38,10 +38,10 @@ export const StepsSection: React.FC = () => {
             Método Prático Passo a Passo
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4 text-balance">
-            COMO VOCÊ VAI RESOLVER SUAS NOITES?
+            COMO VOCÊ VAI TRANSFORMAR SUAS NOITES?
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
-            Sem fórmulas complicadas. Um caminho direto entre identificar o problema e aplicar a solução.
+            Sem fórmulas complicadas. Um caminho direto entre identificar o problema e aplicar hábitos que ajudam de verdade.
           </p>
         </div>
 

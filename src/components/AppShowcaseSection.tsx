@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, LineChart, CheckSquare, HeartPulse, TrendingUp, Sparkles, Check, ArrowRight } from 'lucide-react';
+import { BookOpen, LineChart, CheckSquare, HeartPulse, TrendingUp, Sparkles, Check, ArrowRight, Moon } from 'lucide-react';
 import { AreaInfo, PlanType, VIP_CHECKOUT_URL } from '../types';
 
 interface AppShowcaseSectionProps {
@@ -18,7 +18,7 @@ const areas: (AreaInfo & { icon: React.ReactNode })[] = [
       'Registro rápido em menos de 60 segundos ao acordar',
       'Mapeamento de despertares na madrugada e latência do sono',
       'Identificação imediata do nível real de restauração',
-      'Base concreta para resolver seu sono e eliminar noites em claro',
+      'Base concreta para ajudar no seu sono e reduzir noites mal dormidas',
     ],
     icon: <BookOpen className="w-5 h-5 text-indigo-400" />,
   },
@@ -28,7 +28,7 @@ const areas: (AreaInfo & { icon: React.ReactNode })[] = [
     title: 'MINHA ANÁLISE',
     subtitle: 'Descubra os gatilhos exatos.',
     description:
-      'Pare de tentar soluções aleatórias. Veja exatamente quais hábitos, horários e tensões estão atrapalhando seu sono noite após noite.',
+      'Pare de tentar métodos aleatórios. Veja exatamente quais hábitos, horários e tensões estão atrapalhando seu sono noite após noite.',
     bullets: [
       'Cruzamento claro entre hábitos noturnos e qualidade do sono',
       'Identificação do impacto real de telas, cafeína e estresse',
@@ -103,35 +103,159 @@ export const AppShowcaseSection: React.FC<AppShowcaseSectionProps> = ({ onOpenCh
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3 block">
-            Mais sono, mais energia, tudo aqui. Clique no botão e resolva.
+            Mais sono, mais energia, tudo aqui. Clique no botão e comece.
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6 text-balance">
             APRESENTAMOS O MAPA DO SONO
           </h2>
           <p className="text-lg sm:text-xl text-indigo-200 font-semibold mb-4">
-            Muito mais do que apenas ver como está o seu sono: o método prático para silenciar a mente, resolver seu sono e acordar com energia.
+            Muito mais do que apenas ver como está o seu sono: um método prático para ajudar a acalmar a mente, melhorar seu sono e acordar com mais energia.
           </p>
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Não basta registrar que você dormiu mal — você precisa resolver o problema na raiz. O aplicativo encontra o que sabota seu descanso, entrega alívio imediato para a madrugada e, junto ao conteúdo ouro do Plano VIP, te dá o caminho concreto para dormir a noite inteira.
+            Não basta registrar que você dormiu mal — você precisa cuidar do problema pela raiz. O aplicativo ajuda a identificar o que sabota seu descanso, oferece alívio prático para a madrugada e, junto ao conteúdo ouro do Plano VIP, te dá o caminho para construir noites melhores.
           </p>
         </div>
 
-        {/* Big Showcase Image Banner */}
-        <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900/80 shadow-2xl mb-16">
+        {/* Big Showcase Image Banner - 5-Screen MAPA DO SONO Showcase over Public Night Sky Image */}
+        <div className="relative rounded-3xl overflow-hidden border border-indigo-500/35 bg-[#071026] shadow-2xl mb-16">
           <img
-            src="/src/assets/images/app_screens_mockup_1794187705272.jpg"
-            alt="Apresentação das cinco telas do MAPA DO SONO em smartphones, mostrando cada funcionalidade"
-            className="w-full h-auto object-cover max-h-[500px]"
+            src="https://burst.shopifycdn.com/photos/a-view-of-the-stars-on-night-sky.jpg?width=1200&format=pjpg&exif=0&iptc=0"
+            alt="Apresentação das cinco telas do MAPA DO SONO em smartphones"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
             loading="lazy"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0C152B] via-transparent to-transparent opacity-80" />
-          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 bg-slate-950/85 backdrop-blur-md p-4 rounded-xl border border-slate-800">
-            <div>
-              <p className="text-sm font-bold text-white">Interface Simples, Bonita e Direta ao Ponto</p>
-              <p className="text-xs text-slate-400">Desenvolvida para você acessar à noite sem cansar sua visão</p>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#071026]/85 via-[#091634]/80 to-[#060C1D]/95" />
+
+          <div className="relative z-10 px-4 sm:px-6 pt-8 pb-28 sm:pb-24">
+            {/* Title matching original app_screens_mockup */}
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 text-lg sm:text-2xl font-black text-white">
+                <span className="w-7 h-7 rounded-lg bg-indigo-500/30 border border-indigo-400/50 flex items-center justify-center">
+                  <Moon className="w-4 h-4 text-sky-300 fill-sky-300" />
+                </span>
+                <span>Mapa do Sono</span>
+              </div>
+              <p className="text-xs sm:text-sm text-indigo-200/80 mt-0.5">
+                Aplicativo de Bem-Estar do Sono
+              </p>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+
+            {/* 5 Screens Grid matching original 5-phone showcase */}
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-3.5 max-w-5xl mx-auto items-end">
+              {/* 1. Registro do Sono */}
+              <div className="hidden sm:flex flex-col justify-between bg-[#0B152E]/95 border-2 border-slate-600/60 rounded-[1.5rem] p-3 shadow-2xl ring-1 ring-white/5 min-h-[168px]">
+                <div>
+                  <div className="w-9 h-1.5 bg-slate-950 border border-slate-700/80 rounded-full mx-auto mb-2.5" />
+                  <p className="text-[10px] font-bold text-white text-center mb-2">Registro do Sono</p>
+                </div>
+                <div className="bg-slate-900/95 rounded-xl p-2.5 border border-slate-800 space-y-1.5 text-[9px]">
+                  <div className="flex justify-between text-slate-300">
+                    <span>Sono</span>
+                    <span className="font-mono text-sky-300 font-bold">7h 45m</span>
+                  </div>
+                  <div className="flex justify-between text-slate-400">
+                    <span>Qualidade</span>
+                    <span className="text-amber-300">★★★★☆</span>
+                  </div>
+                  <p className="text-emerald-400 font-semibold pt-1 border-t border-slate-800">Acordei descansado</p>
+                </div>
+              </div>
+
+              {/* 2. Ritmo Circadiano */}
+              <div className="hidden sm:flex flex-col justify-between bg-[#0B152E]/95 border-2 border-slate-600/60 rounded-[1.5rem] p-3 shadow-2xl ring-1 ring-white/5 min-h-[184px]">
+                <div>
+                  <div className="w-9 h-1.5 bg-slate-950 border border-slate-700/80 rounded-full mx-auto mb-2.5" />
+                  <p className="text-[10px] font-bold text-white text-center mb-2">Ritmo Circadiano</p>
+                </div>
+                <div className="bg-slate-900/95 rounded-xl p-2.5 border border-slate-800">
+                  <p className="text-[8px] text-amber-300 font-semibold mb-1.5">Janela de Sono Ideal</p>
+                  <div className="h-12 flex items-end gap-1">
+                    {[35, 65, 90, 75, 45, 70].map((val, i) => (
+                      <div
+                        key={i}
+                        className="flex-1 rounded-t bg-gradient-to-t from-indigo-500 to-emerald-400"
+                        style={{ height: `${val * 0.42}px` }}
+                      />
+                    ))}
+                  </div>
+                  <div className="flex justify-between text-[7px] text-slate-500 mt-1 font-mono">
+                    <span>22h</span>
+                    <span>02h</span>
+                    <span>06h</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 3. Rotina Noturna Calmante (Center Highlight) */}
+              <div className="col-span-2 sm:col-span-1 flex flex-col justify-between bg-[#101E40]/95 border-2 border-emerald-400/60 rounded-[1.6rem] p-3.5 shadow-[0_0_35px_rgba(16,185,129,0.22)] ring-1 ring-emerald-300/20 min-h-[205px]">
+                <div>
+                  <div className="w-10 h-1.5 bg-slate-950 border border-slate-700 rounded-full mx-auto mb-2.5" />
+                  <p className="text-[10px] font-extrabold text-white text-center mb-2.5">Rotina Calmante</p>
+                </div>
+                <div className="space-y-1.5 text-[9px] text-slate-200">
+                  <div className="flex items-center justify-between bg-slate-900/95 px-2 py-1.5 rounded-lg border border-slate-800">
+                    <span>Chá de Camomila</span>
+                    <span className="text-emerald-400 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-slate-900/95 px-2 py-1.5 rounded-lg border border-slate-800">
+                    <span>Sem Telas 1h</span>
+                    <span className="text-emerald-400 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-slate-900/95 px-2 py-1.5 rounded-lg border border-slate-800">
+                    <span>Leitura Leve</span>
+                    <span className="text-emerald-400 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-slate-900/70 px-2 py-1.5 rounded-lg border border-slate-800/70 text-slate-400">
+                    <span>Banho Morno</span>
+                    <span>○</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4. Ferramenta de Respiração SOS */}
+              <div className="flex flex-col justify-between bg-[#0B152E]/95 border-2 border-slate-600/60 rounded-[1.5rem] p-3 shadow-2xl ring-1 ring-white/5 min-h-[184px]">
+                <div>
+                  <div className="w-9 h-1.5 bg-slate-950 border border-slate-700/80 rounded-full mx-auto mb-2.5" />
+                  <p className="text-[10px] font-bold text-white text-center mb-2">Respiração SOS</p>
+                </div>
+                <div className="bg-slate-900/95 rounded-xl p-2.5 border border-slate-800 flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full border-2 border-sky-400/80 bg-sky-950/60 shadow-[0_0_18px_rgba(56,189,248,0.28)] flex items-center justify-center text-[10px] font-bold text-sky-200">
+                    4·7·8
+                  </div>
+                  <span className="text-[8px] text-sky-300 font-medium mt-2">Alívio na madrugada</span>
+                </div>
+              </div>
+
+              {/* 5. Pontuação Semanal */}
+              <div className="flex flex-col justify-between bg-[#0B152E]/95 border-2 border-slate-600/60 rounded-[1.5rem] p-3 shadow-2xl ring-1 ring-white/5 min-h-[168px]">
+                <div>
+                  <div className="w-9 h-1.5 bg-slate-950 border border-slate-700/80 rounded-full mx-auto mb-2.5" />
+                  <p className="text-[10px] font-bold text-white text-center mb-2">Qualidade Semanal</p>
+                </div>
+                <div className="bg-slate-900/95 rounded-xl p-2.5 border border-slate-800 text-center">
+                  <div className="h-8 flex items-end justify-center gap-1 mb-1.5">
+                    {[55, 65, 75, 80, 90, 95].map((val, i) => (
+                      <div
+                        key={i}
+                        className="w-1.5 rounded-t bg-gradient-to-t from-emerald-500 to-amber-300"
+                        style={{ height: `${val * 0.28}px` }}
+                      />
+                    ))}
+                  </div>
+                  <p className="text-xs font-black text-emerald-400 font-mono">85 / 100</p>
+                  <p className="text-[8px] text-slate-400">Média Semanal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative sm:absolute sm:bottom-5 sm:left-5 sm:right-5 z-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 bg-slate-950/90 backdrop-blur-md p-4 rounded-xl border border-slate-800 m-3 sm:m-0">
+            <div>
+              <p className="text-sm font-bold text-white">Interface Simples, Elegante e Direta ao Ponto</p>
+              <p className="text-xs text-slate-400">Modo noturno pensado para você acessar à noite sem cansar sua visão</p>
+            </div>
+            <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 shrink-0">
               <Sparkles className="w-4 h-4" />
               <span>5 Áreas Integradas</span>
             </div>
@@ -350,7 +474,7 @@ export const AppShowcaseSection: React.FC<AppShowcaseSectionProps> = ({ onOpenCh
         {/* Footer of Section & Immediate Conversion CTA */}
         <div className="text-center mt-12 space-y-6">
           <p className="text-base font-semibold text-indigo-300">
-            Mais sono, mais energia, tudo aqui — clique no botão e resolva seu sono.
+            Mais sono, mais energia, tudo aqui — clique no botão e cuide do seu sono.
           </p>
 
           <div className="p-6 rounded-2xl bg-slate-900 border-2 border-[#00E676]/40 max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5 shadow-xl">
@@ -359,7 +483,7 @@ export const AppShowcaseSection: React.FC<AppShowcaseSectionProps> = ({ onOpenCh
                 Mais sono, mais energia, tudo aqui
               </span>
               <p className="text-base sm:text-lg font-extrabold text-white">
-                Clique no botão e resolva seu sono hoje no VIP!
+                Clique no botão e comece a cuidar do seu sono hoje no VIP!
               </p>
             </div>
             <div className="w-full sm:w-auto flex flex-col items-center gap-1.5 shrink-0">
@@ -369,11 +493,11 @@ export const AppShowcaseSection: React.FC<AppShowcaseSectionProps> = ({ onOpenCh
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-7 sm:py-4 text-xs sm:text-sm font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl shadow-xl shadow-[#00E676]/35 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-center leading-snug transition-all"
               >
-                <span>CLIQUE E RESOLVA SEU SONO · VIP (R$ 47)</span>
+                <span>QUERO DORMIR MELHOR · VIP (R$ 47)</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
               </a>
               <span className="text-[11px] font-semibold text-amber-300/95 text-center leading-snug">
-                ★ O ouro para sua vida está no VIP: conteúdos práticos para resolver seu sono.
+                ★ O ouro para sua vida está no VIP: conteúdos práticos para ajudar no seu sono.
               </span>
             </div>
           </div>

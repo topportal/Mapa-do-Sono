@@ -122,11 +122,11 @@ export const ValueTableSection: React.FC<ValueTableSectionProps> = ({ onOpenChec
           </p>
 
           <p className="text-slate-200 text-sm sm:text-base max-w-xl mx-auto leading-relaxed mb-6">
-            Por apenas <strong>R$ 20 de diferença</strong>, você destrava um acervo inteiro com a solução real para calar a mente acelerada e transformar suas noites.
+            Por apenas <strong>R$ 20 de diferença</strong>, você destrava um acervo inteiro com ferramentas práticas para ajudar a acalmar a mente acelerada e transformar suas noites.
           </p>
 
           <div className="py-2.5 px-4 rounded-xl bg-slate-900/80 border border-amber-400/30 text-xs sm:text-sm text-amber-200 font-semibold mb-8 max-w-lg mx-auto">
-            Não é só quantidade: ali dentro está um tesouro para sua vida e para resolver seu sono de vez.
+            Não é só quantidade: ali dentro está um tesouro para sua vida e para ajudar a melhorar seu sono.
           </div>
 
           <div className="space-y-2.5 max-w-xl mx-auto">
@@ -136,7 +136,7 @@ export const ValueTableSection: React.FC<ValueTableSectionProps> = ({ onOpenChec
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-4 sm:px-10 sm:py-5 text-xs sm:text-base md:text-lg font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl shadow-2xl shadow-[#00E676]/45 ring-2 ring-[#00E676]/60 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer text-center leading-snug"
             >
-              <span>CLIQUE E RESOLVA SEU SONO · VIP (R$ 47,00)</span>
+              <span>QUERO CUIDAR DO MEU SONO · VIP (R$ 47,00)</span>
               <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
             <p className="text-xs sm:text-sm font-bold text-amber-300 leading-snug">

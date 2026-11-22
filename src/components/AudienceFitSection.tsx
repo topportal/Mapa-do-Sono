@@ -8,7 +8,7 @@ const benefits = [
   'Identificar os gatilhos reais que sabotam suas noites.',
   'Aplicar técnicas imediatas de desaceleração e alívio noturno.',
   'Substituir o cansaço crônico por energia ao acordar.',
-  'Ter um passo a passo prático e completo para resolver seu sono.',
+  'Ter um passo a passo prático e completo para melhorar seu sono.',
 ];
 
 interface AudienceFitSectionProps {
@@ -22,7 +22,7 @@ export const AudienceFitSection: React.FC<AudienceFitSectionProps> = ({ onOpenCh
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-xs font-bold tracking-widest text-indigo-600 uppercase mb-3 block">
-            Solução Real Para Sua Dor
+            Apoio Prático Para o Seu Descanso
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 text-balance mb-6">
             NÃO SE RESIGNE A DORMIR MAL: MAIS SONO, MAIS ENERGIA PARA A SUA VIDA.
@@ -53,13 +53,13 @@ export const AudienceFitSection: React.FC<AudienceFitSectionProps> = ({ onOpenCh
         <div className="p-8 rounded-2xl bg-gradient-to-br from-indigo-50 via-slate-50 to-purple-50 border border-indigo-100 text-center space-y-4">
           <div className="inline-flex items-center gap-2 text-indigo-600 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-4 h-4" />
-            <span>Solução Concreta, Sem Achismos</span>
+            <span>Prática Concreta, Sem Achismos</span>
           </div>
           <p className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
             Não se trata apenas de olhar gráficos de como você dormiu mal.
           </p>
           <p className="text-base text-slate-700 max-w-2xl mx-auto leading-relaxed">
-            Trata-se de aplicar protocolos práticos de sono, respiração, desenvolvimento pessoal e hábitos noturnos para resolver o problema na raiz.
+            Trata-se de aplicar rotinas práticas de sono, respiração, desenvolvimento pessoal e hábitos noturnos para ajudar a transformar suas noites pela raiz.
           </p>
 
           <div className="pt-3 max-w-md mx-auto space-y-2">
@@ -69,11 +69,11 @@ export const AudienceFitSection: React.FC<AudienceFitSectionProps> = ({ onOpenCh
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-8 sm:py-4 text-xs sm:text-sm font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl shadow-xl shadow-[#00E676]/35 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-center leading-snug transition-all"
             >
-              <span>CLIQUE E RESOLVA SEU SONO · VIP (R$ 47,00)</span>
+              <span>QUERO CUIDAR DO MEU SONO · VIP (R$ 47,00)</span>
               <ArrowRight className="w-4 h-4 shrink-0" />
             </a>
             <p className="text-xs font-semibold text-indigo-900/80 text-center leading-snug">
-              ★ Aqui está um tesouro para sua vida: todo o conteúdo para resolver seu sono.
+              ★ Aqui está um tesouro para sua vida: todo o conteúdo para apoiar o seu sono.
             </p>
           </div>
         </div>

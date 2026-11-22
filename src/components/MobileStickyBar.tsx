@@ -39,7 +39,7 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenCheckout
           rel="noopener noreferrer"
           className="py-2.5 px-4 text-xs font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-xl flex items-center gap-1.5 shadow-lg shadow-[#00E676]/40 hover:scale-[1.02] active:scale-[0.98] shrink-0 cursor-pointer text-center leading-tight transition-all"
         >
-          <span>Clique e Resolva (R$ 47)</span>
+          <span>Quero Dormir Melhor (R$ 47)</span>
           <ArrowRight className="w-3.5 h-3.5 shrink-0" />
         </a>
       </div>

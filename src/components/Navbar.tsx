@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCheckout }) => {
             rel="noopener noreferrer"
             className="inline-block px-3 py-2 sm:px-5 sm:py-2.5 text-[11px] sm:text-xs md:text-sm font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-xl shadow-lg shadow-[#00E676]/35 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer text-center leading-tight"
           >
-            Resolver Sono · R$ 47
+            Melhorar Sono · R$ 47
           </a>
         </div>
       </div>

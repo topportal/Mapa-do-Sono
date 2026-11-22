@@ -79,14 +79,25 @@ export const PlanEssencialSection: React.FC<PlanEssencialSectionProps> = ({ onOp
                   </div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-slate-200 mb-3 bg-slate-900 shadow-sm">
+                <div className="relative rounded-xl overflow-hidden border border-slate-700/60 mb-3 bg-[#080D1A] shadow-md group aspect-[16/9]">
                   <img
-                    src="/src/assets/images/palestra_resiliencia_cover_1794240730973.jpg"
-                    alt="Palestra Especial de Resiliência e Inteligência Emocional"
-                    className="w-full h-auto object-cover aspect-[16/9]"
+                    src="https://images.pexels.com/photos/10401263/pexels-photo-10401263.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                    alt="Palestrante no palco apresentando Masterclass Especial de Resiliência e Inteligência Emocional"
+                    className="w-full h-full object-cover object-[center_22%] opacity-90 group-hover:scale-[1.03] transition-transform duration-700"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#060B18]/95 via-[#060B18]/55 to-transparent flex flex-col justify-center p-4 pointer-events-none">
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-amber-300">
+                      Masterclass Exclusiva
+                    </span>
+                    <p className="text-sm sm:text-base font-black text-amber-100 leading-tight mt-0.5 drop-shadow">
+                      PALESTRA ESPECIAL
+                    </p>
+                    <p className="text-[10px] text-slate-200 mt-0.5 max-w-[175px]">
+                      Resiliência &amp; Inteligência Emocional
+                    </p>
+                  </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
@@ -147,7 +158,7 @@ export const PlanEssencialSection: React.FC<PlanEssencialSectionProps> = ({ onOp
                 rel="noopener noreferrer"
                 className="w-full inline-block text-xs sm:text-sm text-indigo-700 hover:text-indigo-900 font-bold underline cursor-pointer text-center leading-relaxed break-words px-2 py-1 rounded-lg hover:bg-indigo-50/70 transition-colors"
               >
-                ★ Ou clique aqui e leve o VIP (R$ 47,00) — um tesouro para sua vida com tudo para resolver seu sono →
+                ★ Ou clique aqui e leve o VIP (R$ 47,00) — um tesouro para sua vida com tudo para ajudar no seu sono →
               </a>
             </div>
           </div>

@@ -22,7 +22,7 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 text-balance">
-            MAIS SONO, MAIS ENERGIA, TUDO AQUI PARA RESOLVER SEU SONO!
+            MAIS SONO, MAIS ENERGIA, TUDO AQUI PARA AJUDAR NO SEU SONO!
           </h2>
 
           <p className="text-lg sm:text-xl font-bold text-amber-300 mb-3">
@@ -34,7 +34,7 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
           </p>
 
           <p className="text-slate-300 text-base leading-relaxed">
-            No VIP você não leva só o aplicativo para registrar suas noites: você recebe um verdadeiro tesouro para sua vida com imersões, protocolos neurais e práticas corporais que desligam a mente acelerada e resolvem seu sono.
+            No VIP você não leva só o aplicativo para registrar suas noites: você recebe um verdadeiro tesouro para sua vida com imersões, técnicas de relaxamento e práticas corporais que ajudam a acalmar a mente acelerada e melhorar seu sono.
           </p>
         </div>
 
@@ -83,14 +83,27 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
                 </span>
               </div>
 
-              <div className="rounded-xl overflow-hidden border border-slate-800 mb-4 bg-slate-950">
+              <div className="relative rounded-xl overflow-hidden border border-amber-300/30 mb-4 bg-slate-950 shadow-md group aspect-[4/3]">
                 <img
-                  src="/src/assets/images/bonus_alta_performance_1794240439880.jpg"
-                  alt="Palestra Alta Performance Profissional"
-                  className="w-full h-auto object-cover aspect-[4/3]"
+                  src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                  alt="Executiva em escritório moderno representando Alta Performance Profissional"
+                  className="w-full h-full object-cover object-[center_18%] group-hover:scale-[1.03] transition-transform duration-700"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/75 via-transparent to-slate-950/90 flex flex-col justify-between p-4 pointer-events-none">
+                  <div className="text-center">
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-amber-200 block">
+                      Masterclass Executiva
+                    </span>
+                    <p className="text-sm font-black tracking-wide text-amber-100 mt-0.5 drop-shadow">
+                      ALTA PERFORMANCE
+                    </p>
+                  </div>
+                  <span className="text-[9px] uppercase tracking-widest text-amber-200/90 text-center font-semibold">
+                    Clareza &amp; Foco Profissional
+                  </span>
+                </div>
               </div>
 
               <h4 className="text-lg font-extrabold text-white mb-2 leading-snug">
@@ -138,14 +151,27 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
                 </span>
               </div>
 
-              <div className="rounded-xl overflow-hidden border border-slate-700/60 mb-4 bg-slate-950">
+              <div className="relative rounded-xl overflow-hidden border border-amber-200/35 mb-4 bg-[#050A18] shadow-md group aspect-[4/3]">
                 <img
-                  src="/src/assets/images/bonus_codigo_sono_1794187704806.jpg"
-                  alt="Capa oficial da Imersão Código do Sono Perfeito"
-                  className="w-full h-auto object-cover aspect-[4/3]"
+                  src="https://images.pexels.com/photos/32088272/pexels-photo-32088272.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                  alt="Lua luminosa no céu estrelado — capa da Imersão Código do Sono Perfeito"
+                  className="w-full h-full object-cover object-center opacity-75 group-hover:scale-[1.04] transition-transform duration-700"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-2 rounded-lg border border-amber-200/30 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#060C1D]/35 via-[#060C1D]/45 to-[#050A18]/92 flex flex-col items-center justify-end text-center p-5 pointer-events-none">
+                  <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-amber-200/95">
+                    Imersão Exclusiva
+                  </span>
+                  <p className="text-base font-black tracking-wide text-white leading-tight mt-1">
+                    CÓDIGO DO SONO
+                    <span className="block text-amber-200">PERFEITO</span>
+                  </p>
+                  <span className="text-[9px] text-slate-300 tracking-widest uppercase mt-1.5">
+                    6 Sessões Completas
+                  </span>
+                </div>
               </div>
 
               <h4 className="text-lg font-extrabold text-white mb-2 leading-snug">
@@ -257,11 +283,11 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
                 </span>
               </div>
 
-              <div className="rounded-xl overflow-hidden border border-slate-800 mb-4 bg-slate-950">
+              <div className="relative rounded-xl overflow-hidden border border-slate-700/70 mb-4 bg-slate-950 shadow-md group">
                 <img
-                  src="/src/assets/images/bonus_alongamento_21dias_1794240439831.jpg"
-                  alt="Desafio 21 Dias Alongue-se em Casa"
-                  className="w-full h-auto object-cover aspect-[4/3]"
+                  src="https://images.pexels.com/photos/36764399/pexels-photo-36764399.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                  alt="Mulher praticando alongamento suave em tapete em casa"
+                  className="w-full h-auto object-cover object-center aspect-[4/3] group-hover:scale-[1.03] transition-transform duration-700"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
@@ -306,11 +332,11 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
                 </span>
               </div>
 
-              <div className="rounded-xl overflow-hidden border border-slate-800 mb-4 bg-slate-950">
+              <div className="relative rounded-xl overflow-hidden border border-slate-700/70 mb-4 bg-slate-950 shadow-md group">
                 <img
-                  src="/src/assets/images/bonus_qi_gong_alongamento_1794187705206.jpg"
-                  alt="Prática de Qi Gong para relaxamento e bem-estar"
-                  className="w-full h-auto object-cover aspect-[4/3]"
+                  src="https://images.pexels.com/photos/38155763/pexels-photo-38155763.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                  alt="Prática tradicional de Qi Gong com movimentos suaves e respiração consciente"
+                  className="w-full h-auto object-cover object-[center_20%] aspect-[4/3] group-hover:scale-[1.03] transition-transform duration-700"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
@@ -371,11 +397,11 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-2">
-            Aplicativo + Palestra + 5 Bônus Completos para Resolver Seu Sono
+            Aplicativo + Palestra + 5 Bônus Completos para Ajudar no Seu Sono
           </h3>
 
           <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-6">
-            Mais sono, mais energia, tudo aqui: sessões práticas, desenvolvimento pessoal e protocolos completos para transformar sua vida e suas noites.
+            Mais sono, mais energia, tudo aqui: sessões práticas, desenvolvimento pessoal e hábitos completos para transformar sua vida e suas noites.
           </p>
 
           <div className="space-y-2.5 max-w-xl mx-auto">
@@ -386,11 +412,11 @@ export const PlanVipSection: React.FC<PlanVipSectionProps> = ({ onOpenCheckout }
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-4 sm:px-10 sm:py-5 text-xs sm:text-base md:text-lg font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl shadow-2xl shadow-[#00E676]/45 ring-2 ring-[#00E676]/60 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer text-center leading-snug"
             >
               <Sparkles className="w-5 h-5 text-slate-950 fill-slate-950 shrink-0" />
-              <span>CLIQUE NO BOTÃO E RESOLVA SEU SONO · VIP (R$ 47)</span>
+              <span>QUERO DORMIR MELHOR · VIP (R$ 47)</span>
               <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
             <p className="text-xs sm:text-sm font-bold text-amber-300 leading-snug">
-              ★ Um tesouro para sua vida: o ouro que faltava para resolver seu sono e ter mais energia.
+              ★ Um tesouro para sua vida: o apoio que faltava para melhorar seu sono e ter mais energia.
             </p>
           </div>
         </div>

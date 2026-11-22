@@ -19,7 +19,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
             Sua Virada de Chave Começa Hoje
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6 text-balance">
-            MAIS SONO, MAIS ENERGIA, TUDO AQUI. CLIQUE NO BOTÃO E RESOLVA.
+            MAIS SONO, MAIS ENERGIA, TUDO AQUI. CLIQUE NO BOTÃO E COMECE.
           </h2>
 
           <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -33,12 +33,12 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
               <span className="bg-slate-900 px-3 py-1 rounded-md border border-slate-800">Suas responsabilidades</span>
             </div>
             <p className="text-emerald-400 font-bold text-base sm:text-lg pt-2">
-              Não aceite mais acordar exausto quando o caminho para resolver seu sono custa menos que uma refeição.
+              Não aceite mais acordar exausto quando o apoio prático para melhorar seu sono custa menos que uma refeição.
             </p>
             <div className="space-y-1.5 text-slate-300 text-sm sm:text-base">
               <p>Identifique a raiz das suas madrugadas acordado.</p>
               <p>Desligue a mente acelerada com técnicas imediatas.</p>
-              <p>Use os 5 conteúdos do VIP para transformar sua vida e resolver seu sono de verdade.</p>
+              <p>Use os 5 conteúdos do VIP para transformar sua rotina e melhorar seu sono de verdade.</p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
                 MAPA DO SONO — COMPLETO VIP
               </p>
               <p className="text-xs sm:text-sm text-slate-200 mb-3">
-                Tudo do Essencial + 5 conteúdos profundos para resolver seu sono (Economize R$ 483,80).
+                Tudo do Essencial + 5 conteúdos práticos para ajudar no seu sono (Economize R$ 483,80).
               </p>
               <div className="flex items-baseline gap-1 mb-4">
                 <span className="text-xl font-black text-emerald-400">R$</span>
@@ -97,11 +97,11 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
                 className="w-full py-4 px-4 text-xs sm:text-sm font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-xl shadow-lg shadow-[#00E676]/35 ring-2 ring-[#00E676]/60 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2 text-center leading-snug"
               >
                 <Sparkles className="w-4 h-4 text-slate-950 fill-slate-950 shrink-0" />
-                <span>CLIQUE E RESOLVA SEU SONO (R$ 47,00)</span>
+                <span>QUERO CUIDAR DO MEU SONO (R$ 47,00)</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
               </a>
               <p className="text-[11px] font-bold text-amber-300 text-center leading-snug">
-                ★ O verdadeiro tesouro para sua vida e para resolver seu sono.
+                ★ O verdadeiro tesouro para sua vida e para ajudar no seu sono.
               </p>
             </div>
           </div>
@@ -118,11 +118,11 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-5 py-4 sm:px-12 sm:py-5 text-sm sm:text-lg md:text-xl font-black text-slate-950 bg-[#00E676] hover:bg-[#00FF88] rounded-2xl shadow-2xl shadow-[#00E676]/45 ring-2 ring-[#00E676]/60 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer text-center leading-snug"
           >
-            <span>CLIQUE NO BOTÃO E RESOLVA SEU SONO · VIP (R$ 47)</span>
+            <span>CLIQUE E CUIDE DO SEU SONO · VIP (R$ 47)</span>
             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
           </a>
           <p className="text-xs sm:text-sm font-bold text-amber-300 leading-snug">
-            ★ Dentro do VIP está um tesouro para sua vida: tudo para resolver seu sono de vez.
+            ★ Dentro do VIP está um tesouro para sua vida: tudo para apoiar o seu descanso.
           </p>
         </div>
 
